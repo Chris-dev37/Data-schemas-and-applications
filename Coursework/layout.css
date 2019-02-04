@@ -1,0 +1,19 @@
+
+th{
+    background-color: honeydew;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    border-spacing: 10px;
+    font-style: italic;
+}
+td{
+    padding: 50px
+}
+.inline_table{
+    display: inline-block;
+    padding: 50px;
+}
+body{
+    background-color: teal;
+}
