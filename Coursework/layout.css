@@ -1,7 +1,7 @@
 
 th{
-    background-color: honeydew;
-    padding: 20px;
+    background-color: mistyrose;
+    padding: 50px;
     text-align: center;
     font-size: 40px;
     border-spacing: 10px;
@@ -20,5 +20,9 @@ th{
   }
 
   body{
-    background-color: teal;
+    background-color: moccasin;
+  }
+
+  table{
+    width: 700px;
   }
