@@ -7,17 +7,18 @@ th{
     border-spacing: 10px;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
-}
-td{
+  }
+
+  td{
     padding: 50px;
     display: block;
-}
-.inline_table{
+  }
+
+  .inline_table{
     display: inline-block;
-    padding: 50px;
-}
+    padding: 30px;
+  }
 
-
-body{
+  body{
     background-color: teal;
-}
+  }

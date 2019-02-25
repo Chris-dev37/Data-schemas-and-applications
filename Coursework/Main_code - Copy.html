@@ -1,14 +1,12 @@
 <!DOCTYPE html>
+<? 
+$url = "http://api.openweathermap.org/data/2.5/find?q=Vancouver&units=metric&type=accurate&mode=xml&APPID=e7f136afc12e538a55ec4e4c0c9722c1";
+$getweather = 
+?>
 <html>
   <head>
     <link rel="stylesheet" href="layout.css" type="text/css">
     <link rel="api" href="api.js">
-    <?php 
-    $url = "http://api.openweathermap.org/data/2.5/find?q=Vancouver&units=metric&type=accurate&mode=xml&APPID=e7f136afc12e538a55ec4e4c0c9722c1";
-    $getweather = simplexml_load_file($url);
-    $gethumidity = $getweather->list->item->humidity['value'];
-    $gettemp = $getweather->list->item->temp['value'];
-    ?>
   </head>
 <body>
 
@@ -68,10 +66,12 @@
   }
   </script>
 
-  (document).ready(function()) {
-
-
-  }
-
+  <script>
+    function myWeather(){
+      var URL="http://api.openweathermap.org/data/2.5/find?q=Vancouver&units=metric&type=accurate&mode=xml&APPID=e7f136afc12e538a55ec4e4c0c9722c1";
+      
+      var weather = new weather.api(documnet.getElementById("OpenWeather"),URL);
+    }
+  </script>
 </body>
 </html>
