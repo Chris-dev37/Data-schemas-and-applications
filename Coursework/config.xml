@@ -6,15 +6,9 @@
     <database>fet17024138</database>
   </MySQL>
   <keys>
-    <map></map>
+    <map>AIzaSyBEwVa1GKs4lLB4CVi4YQ2Ptaep70MV</map>
     <map_secret></map_secret>
-    <weather>afaafb0a30a2e955</weather>
-    <map_secret></map_secret>
-    <flickr>7d9c9bec97c4d7160d1be468b37acd62</flickr>
-    <flickr_secret>115e907c319b7ef9</flickr_secret>
-  <twitter_auth_access_token>460433165-jszRxB5AwCRRQHRdgyqmqJTcuzZgOUVeULczm9Lg</twitter_auth_access_token>
-  <twitter_auth_access_token_secret>FWrwJvz58XV4bSbL8IlYBEsM5fJ2hvrY1Ahu7vICa2ePx</twitter_auth_access_token_secret>
-  <twitter_consumer_key>OWNfrwI1pU0ni1Qz7MsueeXNQ</twitter_consumer_key>
-  <twitter_consumer_secret>zGn1GMy09TuVVEyyIXUJpjx6iOcUX5TlnwxzULb6QYTYsuyaq8</twitter_consumer_secret>
+    <weather>e7f136afc12e538a55ec4e4c0c9722c1</weather>
+    <flickr></flickr>
   </keys>
 </config>

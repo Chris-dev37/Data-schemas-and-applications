@@ -6,7 +6,7 @@
   $servername = $config->MySQL->database;
   $username = $config->MySQL->username;
   $password = $config->MySQL->password;
-  $conn = new mysqli($host, $username, $password, $servername);
+  $db = new mysqli($host, $username, $password, $servername);
 
   header("Content-Type: application/rss+xml; charset=ISO-8859-1");
   $rssfeed = '<?xml version="1.0" encoding="ISO-8859-1"?>';
@@ -16,7 +16,6 @@
   $rssfeed .= '<link>http://cems.uwe.ac.uk/~a2-matuzeviciu/</link>';
   $rssfeed .= '<description>RSS feed showing city and point of interest data currently in the database.</description>';
   $rssfeed .= '<language>en-us</language>';
-  $rssfeed .= '<copyright>Copyright (C) 2009 mywebsite.com</copyright>';
 
   function add_post($title, $desc, $link){
     global $rssfeed;
@@ -29,9 +28,9 @@
 
 //CITY's
   $sql = "SELECT * FROM City";
-  $result = $conn->query($sql);
+  $result = $db->query($sql);
   if ($result->num_rows > 0) {
-      while($row = $result->fetch_object()) {
+      while($row = $result->fetch_assoc()) {
         $post = "";
         $title = $row["Name"];
         foreach($row as $key=>$value){
@@ -42,9 +41,9 @@
   }
 
   $sql = "SELECT * FROM PlaceOfInterest";
-  $result = $conn->query($sql);
+  $result = $db->query($sql);
   if ($result->num_rows > 0) {
-      while($row = $result->fetch_object()) {
+      while($row = $result->fetch_assoc()) {
         $post = "";
         $title = $row["Name"];
         foreach($row as $key=>$value){
