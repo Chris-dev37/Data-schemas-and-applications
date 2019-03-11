@@ -1,9 +1,9 @@
 
 th{
     background-color: mistyrose;
-    padding: 50px;
+    padding: 40px;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     border-spacing: 10px;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
@@ -12,6 +12,8 @@ th{
   td{
     padding: 50px;
     display: block;
+    word-wrap: break-word;         
+    overflow-wrap: break-word;
   }
 
   .inline_table{
@@ -19,6 +21,29 @@ th{
     padding: 30px;
   }
 
+  .weatherTitle{
+    background-color: mistyrose;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+  }
+.edinburghWeather{
+    background-color: mistyrose;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    float: left;
+}
+.vancouverWeather{
+    background-color: mistyrose;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    float: left;
+}
   body{
     background-color: moccasin;
   }
