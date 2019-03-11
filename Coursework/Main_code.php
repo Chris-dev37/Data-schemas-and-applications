@@ -1,26 +1,3 @@
-<?php
-   function curl($url){
-     $ch = curl_init();
-     curl_setopt($ch, CURLOPT_URL, $url);
-     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-     $data = curl_exec($ch);
-     curl_close($ch);
-
-     return $data;
-   }    
-    
-  $VweatherURL = curl("api.openweathermap.org/data/2.5/forecast?q=Vancouver,ca&units=metric&appid=e7f136afc12e538a55ec4e4c0c9722c1");
-  $EweatherURL = curl("api.openweathermap.org/data/2.5/forecast?q=Edinburgh,gb&units=metric&appid=e7f136afc12e538a55ec4e4c0c9722c1");
-  
-  $VweatherArray = json_decode($VweatherURL, true);
-  $EweatherArray = json_decode($EweatherURL, true);
-
-
-  //print_r($VweatherArray);
-  //print_r($EweatherArray);
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
