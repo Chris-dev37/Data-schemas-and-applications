@@ -65,11 +65,9 @@
               text.textContent = address
               text.textContent = workinghours
               infowincontent.appendChild(text);
-              var icon = customLabel[type] || {};
               var marker = new google.maps.Marker({
                 map: map,
                 position: point,
-                label: icon.label
               });
               marker.addListener('mouseover', function() {
                 infoWindow.setContent(infowincontent);
