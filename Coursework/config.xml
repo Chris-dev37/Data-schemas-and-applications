@@ -7,13 +7,7 @@
   </MySQL>
   <keys>
     <map>AIzaSyBEwVa1GKs4lLB4CVi4YQ2Ptaep70MV_x8</map>
-    <map_secret></map_secret>
     <weather>e7f136afc12e538a55ec4e4c0c9722c1</weather>
     <flickr></flickr>
-    <flickr_secret></flickr_secret>
-  <twitter_auth_access_token></twitter_auth_access_token>
-  <twitter_auth_access_token_secret></twitter_auth_access_token_secret>
-  <twitter_consumer_key></twitter_consumer_key>
-  <twitter_consumer_secret></twitter_consumer_secret>
   </keys>
 </config>
