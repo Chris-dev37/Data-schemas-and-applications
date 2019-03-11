@@ -35,33 +35,20 @@
     </tr> 
 
     <td><iframe
-      width="500"
+      width="600"
       height="450"
       frameborder="100" style="border:100"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBEwVa1GKs4lLB4CVi4YQ2Ptaep70MV_x8&q=Vancouver+BC" allowfullscreen>
+      src="vancouverMap.php" allowfullscreen>
     </iframe></td>
 
     <td>
         <h3 class="weatherTitle">Vancouver Weather</h3>
-        <?php
-        for($i=0; $i<40; $i+=8){
-            $date = $VweatherArray['list'][$i]['dt_txt'];
-            $tempCurrent = $VweatherArray['list'][$i]['main']['temp'];
-            $tempMin = $VweatherArray['list'][$i]['main']['temp_min'];
-            $tempMax = $VweatherArray['list'][$i]['main']['temp_max'];
-            $weatherMain = $VweatherArray['list'][$i]['weather'][0]['main'];
-            $weatherMainDes = $VweatherArray['list'][$i]['weather'][0]['description'];
-            $Iconpull = $VweatherArray['list'][$i]['weather'][0]['icon'];
-            $windSpeed = $VweatherArray['list'][$i]['wind']['speed'];
-            $Image = "http://openweathermap.org/img/w/".$Iconpull.".png";
-          
-            echo "<br>Date: ".$date."<br>";
-            echo "Main Weather: ".$weatherMain.", ".$weatherMainDes.;
-            echo '<img src="data:image/jpeg;base64,'.base64_encode(file_get_contents ($Image )).'"/><br>';
-            echo "Temp: ".$tempCurrent."&#176C, Temp Lows: ".$tempMin."&#176C, Temp Highs: ".$tempMax."&#176C<br>";
-            echo "Wind Speed: ".$windSpeed."<br>";
-        }
-        ?>
+        <iframe
+      width="600"
+      height="450"
+      frameborder="100" style="border:100"
+      src="vancouverWeather.php">
+    </iframe>
     </td>
   </table>
 
@@ -70,33 +57,20 @@
         <th>Edinburgh</th>
       </tr>
     <td><iframe
-      width="500"
+      width="600"
       height="450"
       frameborder="100" style="border:100"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBEwVa1GKs4lLB4CVi4YQ2Ptaep70MV_x8&q=Edinburgh+GB" allowfullscreen>
+      src="edinburghMap.php" allowfullscreen>
     </iframe></td>
 
     <td>
         <h3 class="weatherTitle">Edinburgh Weather</h3>
-        <?php 
-        for($i=0; $i<40; $i+=8){
-            $date = $EweatherArray['list'][$i]['dt_txt'];
-            $tempCurrent = $EweatherArray['list'][$i]['main']['temp'];
-            $tempMin = $EweatherArray['list'][$i]['main']['temp_min'];
-            $tempMax = $EweatherArray['list'][$i]['main']['temp_max'];
-            $weatherMain = $EweatherArray['list'][$i]['weather'][0]['main'];
-            $weatherMainDes = $EweatherArray['list'][$i]['weather'][0]['description'];
-            $Iconpull = $EweatherArray['list'][$i]['weather'][0]['icon'];
-            $windSpeed = $EweatherArray['list'][$i]['wind']['speed'];
-            $Image = "http://openweathermap.org/img/w/".$Iconpull.".png";
-        
-            echo "<br>Date: ".$date."<br>";
-            echo "Main Weather: ".$weatherMain.", ".$weatherMainDes."<br>";
-            echo '<img src="data:image/jpeg;base64,'.base64_encode(file_get_contents ($Image )).'"/><br>';
-            echo "Temp: ".$tempCurrent."&#176C, Temp Lows: ".$tempMin."&#176C, Temp Highs: ".$tempMax."&#176C<br>";
-            echo "Wind Speed: ".$windSpeed."<br>";
-        }
-        ?>
+        <iframe
+      width="600"
+      height="450"
+      frameborder="100" style="border:100"
+      src="edinburghWeather.php">
+    </iframe>
     </td>
   </table>
 
