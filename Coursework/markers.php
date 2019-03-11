@@ -48,8 +48,8 @@
     // Add to XML document node
     $xml.=  '<marker';
     $xml.=  ' id="' . $row['POI_ID'] . '" ';
-    $xml.=  'name="' . parseToXML($row['namedb']) . '" ';
-    $xml.=  'address="' . parseToXML($row['addressdb']) . '" ';
+    $xml.=  'name="' . parseToXML($row['Name']) . '" ';
+    $xml.=  'address="' . parseToXML($row['Address']) . '" ';
     $xml.=  'lat="' . $row['Lat'] . '" ';
     $xml.= 'lng="' . $row['Long'] . '" ';
     $xml.=  'workinghours="' . $row['WorkingHours'] . '" ';
