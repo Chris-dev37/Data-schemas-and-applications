@@ -26,7 +26,7 @@
     $rssfeed .= '</item>';
   }
 
-//CITY's
+//Display the city names and information
   $sql = "SELECT * FROM City";
   $result = $db->query($sql);
   if ($result->num_rows > 0) {
@@ -40,6 +40,7 @@
       }
   }
 
+//Display all the places if interest and the info as they appear in the database
   $sql = "SELECT * FROM PlaceOfInterest";
   $result = $db->query($sql);
   if ($result->num_rows > 0) {
@@ -58,4 +59,10 @@
   $rssfeed .= '</rss>';
   echo $rssfeed;
 
+
+//https://www.carronmedia.com/create-an-rss-feed-with-php/
+//https://www.w3schools.in/php/php-rss-feed/
+//www.pontikis.net/blog/simple-rss-class-create-rss-feed
  ?>
+
+
