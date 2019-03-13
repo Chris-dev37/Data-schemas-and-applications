@@ -18,6 +18,10 @@
               <xs:element type="xs:string" name="map"/>
               <xs:element type="xs:string" name="weather"/>
               <xs:element type="xs:string" name="flickr"/>
+              <xs:element type="xs:string" name="twitter_auth_access_token"/>
+              <xs:element type="xs:string" name="twitter_auth_access_token_secret"/>
+              <xs:element type="xs:string" name="twitter_consumer_key"/>
+              <xs:element type="xs:string" name="twitter_consumer_secret"/>
             </xs:choice>
           </xs:complexType>
         </xs:element>
