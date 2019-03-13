@@ -9,5 +9,9 @@
     <map>AIzaSyBEwVa1GKs4lLB4CVi4YQ2Ptaep70MV_x8</map>
     <weather>e7f136afc12e538a55ec4e4c0c9722c1</weather>
     <flickr></flickr>
+	<twitter_auth_access_token>1105299066202796032-Xp335zdqCdrqBOVJ4YEwtoZYliWCWi</twitter_auth_access_token>
+	<twitter_auth_access_token_secret>1mM3vtGnGfsu8BDLijmCC67GNuqB8npUPBytiZQdWxB8c </twitter_auth_access_token_secret>
+	<twitter_consumer_key>1R81b0XcJqjwIQTFXBnGAQ5fg </twitter_consumer_key>
+	<twitter_consumer_secret>eQzXkL8DUh22BBskpzXXQaa5ml5VnPMOUv3TylXpETtJIxKZiX </twitter_consumer_secret>
   </keys>
 </config>
